@@ -120,7 +120,7 @@ h4 {
 .msg p {
     color: rgb(255, 246, 246);
     font-size: .8em;
-    padding-bottom: 35px;
+    padding: 0 0 15px 0;
 
 }
 footer a {
@@ -179,6 +179,7 @@ footer .social img {
 
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+    text-align: center;
 }
 .rivers-card {
     grid-column: 2/4;
