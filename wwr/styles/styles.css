@@ -28,7 +28,6 @@ header {
     grid-template-columns: 150px auto;
     padding: 0 0 5px 0;
     align-items: center;
-    position: relative;
     z-index: 2;
 }
 
@@ -36,7 +35,6 @@ header {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-    display: flex;
 }
 
 nav {
@@ -104,7 +102,7 @@ h4 {
 *              Main Area
 *
 ********************************************************/
-#home-grid {
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     justify-content: center;
@@ -179,7 +177,6 @@ main section {
 
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
-    text-align: center;
 }
 
 .rivers-card {
