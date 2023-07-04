@@ -5,29 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get in touch for Digital eye</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <a href="/" class="logo">
-            <img src="images/logo.png" alt="logo">
-        </a>
-        <nav>
-            <a href="index.html">Homepage</a>
-            <a href="who-we-are.html">Who we are</a>
-            <a href="get-in-touch.html">Get in touch</a>
-        </nav>
-    </header>
-    <div>
-        <div class="sliders">
-            <img src="images/top2.png" alt="image for Get in touch">
-            <img src="images/top.png" alt="image for Get in touch">
-        </div>
-        <section>
-            <h1>We Get It Done</h1>
-        </section>
-    </div>
+    <div class="content">
+        <header>
+            <a class="logo-link"  href="index.html">
+                <img class="logo" src="images/Digital-eye-new1.png" alt="logo">
+            </a>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="who-we-are.html">Who we are</a>
+                <a href="get-in-touch.html">Get in touch</a>
+            </nav>
+        </header>
     <main>
+        <div class="top-web">
+            <div class="full-container">
+                 <!-- Slideshow container -->
+                             <div class="slideshow-container2">
+                    <div class="mySlides3 fade slide-grid">
+                        <div class="numbertext">1 / 2</div>
+                        <figure>
+                            <img class="img-slides" src="images/top.png" alt="img slider">
+                            <figcapture class="text">Caption Text</figcapture>
+                        </figure>
+                    </div>
+                    <div class="mySlides3 fade slide-grid">
+                        <div class="numbertext">2 / 2</div>
+                        <figure>
+                            <img class="img-slides" src="images/top2.png" alt="img slider">
+                            <figcapture class="text">Caption Text</figcapture>
+                        </figure>
+                    </div>
+                    <!-- The dots/circles -->
+                             </div>
+                             <div class="dots-loc">
+                    <span class="dot3"></span>
+                    <span class="dot3"></span>
+                             </div>
+            </div>
+            <div class="top-title" >
+                <h1>We Get It Done</h1>
+            </div>
+        </div>
         <p>
             Want to get in touch? contact details below to start the conversation.
             We aim to get back to all enquiries within 24 hours.
@@ -73,7 +95,7 @@
         </form>
     </main>
     <footer>
-        <img src="images/logo.png" alt="logo"></a>
+        <img src="images/logo.png" alt="logo">
         <p>Digital Eye &copy; 2023 - Nicholas Ssewanyana</p>
         <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="get-in-touch.html">Get in touch</a></p>
@@ -89,6 +111,27 @@
             </a>
         </div>
     </footer>
+    <script>
+        let slideIndex3 = 0;
+        showAutoSlides();
+
+        function showAutoSlides() {
+            let q;
+            let slides3 = document.getElementsByClassName("mySlides3");
+            let dots3 = document.getElementsByClassName("dot3");
+            for (q = 0; q < slides3.length; q++) {
+                slides3[q].style.display = "none";
+            }
+            slideIndex3++;
+            if (slideIndex3 > slides3.length) { slideIndex3 = 1 }
+            for (q = 0; q < dots3.length; q++) {
+                dots3[q].className = dots3[q].className.replace(" active", "");
+            }
+            slides3[slideIndex3 - 1].style.display = "grid";
+            dots3[slideIndex3 - 1].className += " active";
+            setTimeout(showAutoSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
 </body>
 
 </html>
