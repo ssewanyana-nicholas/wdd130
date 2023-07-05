@@ -673,6 +673,175 @@ figure {
 
 /*******************************************************
 *
+*          css for Who we are
+*
+*******************************************************/
+
+.top-image img {
+    width: 100%;
+}
+
+.first-text {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2px;
+    color: #332504;
+    background-color: #eedcb2;
+}
+
+.first-text h1 {
+    grid-column: 5/8;
+    grid-row: 1;
+    text-align: center;
+}
+
+.text1 {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    font-size: 35px;
+    text-align: center;
+}
+
+.text2 {
+    grid-column: 2/12;
+    grid-row: 4/5;
+    font-size: 35px;
+    text-align: center;
+}
+
+.text3 {
+    grid-column: 2/12;
+    grid-row: 6/7;
+    font-size: 35px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #11e78f;
+}
+  
+  .slides-container {
+    display: flex;
+    transition: transform 3s ease-in-out;
+    text-align: center;
+}
+
+  .slide {
+    flex: 0 0 100%;
+}
+
+.slides-container img {
+    width: 1000px;
+    height: 800px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.team h4 {
+    grid-column: 6/8;
+    font-size: 40px;
+}
+
+.team p {
+    grid-column: 2/12;
+    grid-row: 2;
+    font-size: 30px;
+    text-align: center;
+}
+
+.team img {
+    grid-column: 2/12;
+    grid-row: 3;
+    border-radius: 50px;
+}
+
+.eyes {
+    font-size: 50px;
+    font-family: var(--heading-font);
+}
+
+.big-people {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 15px;
+}
+
+
+.ceo {
+    grid-column: 1/5;
+    grid-row: 2/6;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ceo img {vertical-align: middle;
+    width: 100%;
+}
+
+.ceo .wording {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.md {
+    grid-column: 5/9;
+    grid-row: 2/6;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.md img {vertical-align: middle;
+    width: 100%;
+}
+
+.md .wording {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.gm {
+    grid-column: 9/13;
+    grid-row: 2/6;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gm img {vertical-align: middle;
+    width: 100%;
+}
+
+.gm .wording {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+/*******************************************************
+*
 *          CSS for Get in touch page
 *
 *******************************************************/
@@ -695,3 +864,7 @@ figure {
     z-index: 1;
 }
 
+
+  
+  
+  
