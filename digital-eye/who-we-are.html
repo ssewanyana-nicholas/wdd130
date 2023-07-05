@@ -51,8 +51,7 @@
             <div class="slider">
                 <div class="slides-container">
                     <div class="slide">
-                        <img class="mission" src="images/Beige Brown Minimalist Company Mission Instagram Post.png"
-                            alt="Image for Who We Are">
+                        <img class="mission" src="images/mission.png" alt="Image for Who We Are">
                     </div>
                     <div class="slide">
                         <img class="vision" src="images/vision.png" alt="Image for Who We Are">
@@ -125,20 +124,19 @@
             </div>
         </footer>
     </div>
+    <script>
+        const slidesContainer = document.querySelector('.slides-container');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const slideWidth = slides[0].clientWidth;
+
+        function showSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            slidesContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+        }
+
+        setInterval(showSlide, 8000);
+    </script>
 </body>
-<script>
-    const slidesContainer = document.querySelector('.slides-container');
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    const slideWidth = slides[0].clientWidth;
-
-    function showSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        slidesContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
-    }
-
-    setInterval(showSlide, 8000);
-</script>
-
 
 </html>

@@ -4,26 +4,30 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=Lobster|Jost');
 
 :root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #11e78f;
-  --secondary-color: #0d009c;
-  --accent1-color: #a31212;
-  --accent2-color: #f8ae00;
+    /* change the values below to your colors from your palette */
+    --primary-color: #11e78f;
+    --secondary-color: #0d009c;
+    --accent1-color: #a31212;
+    --accent2-color: #f8ae00;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Lobster";
-  --paragraph-font: Jost, Helvetica, sans-serif;
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Lobster";
+    --paragraph-font: Jost, Helvetica, sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #11e78f;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color:#169b63;
-  --nav-link-color: #5f5d77;
-  --nav-background-color: #11e78f;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #087e4c;
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #11e78f;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #000000;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #169b63;
+    --nav-link-color: #5f5d77;
+    --nav-background-color: #11e78f;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #087e4c;
 }
 
 
@@ -35,11 +39,11 @@ Fonts are separated by a | */
 ********************************************************/
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 22px;
-  font-family: 'jost', 'Helvetica', 'san-serif';
-  background-color: rgb(241, 223, 223);
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-family: 'jost', 'Helvetica', 'san-serif';
+    background-color: rgb(241, 223, 223);
 }
 
 .content {
@@ -48,14 +52,20 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
 }
 
-h2, h3 {
-	text-align: center;
-	color: var(--accent1-color);
+h2,
+h3 {
+    text-align: center;
+    color: var(--accent1-color);
 }
 
 /*******************************************************
@@ -65,7 +75,7 @@ h2, h3 {
 ********************************************************/
 
 header {
-    background-color:#11e78f;
+    background-color: #11e78f;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
@@ -87,7 +97,7 @@ nav {
     display: flex;
     justify-content: space-around;
     grid-column: 4/13;
-    background-color: #11e78f ;
+    background-color: #11e78f;
     height: 100%;
 }
 
@@ -96,12 +106,14 @@ nav {
     width: 150px;
 
 }
+
 nav a {
     text-align: center;
     text-decoration: none;
     color: #5f5d77;
     padding: 35px;
 }
+
 nav a:hover {
     background-color: #087e4c;
     color: white;
@@ -122,7 +134,7 @@ nav a:hover {
 
 }
 
-.welcome-grid img{
+.welcome-grid img {
     grid-column: 1/13;
     grid-row: 1/5;
 
@@ -140,7 +152,7 @@ nav a:hover {
     grid-row: 2/4;
     z-index: 1;
     font-size: 30px;
-    
+
 
 }
 
@@ -157,7 +169,7 @@ nav a:hover {
 }
 
 
-.button{
+.button {
     grid-column: 6/8;
     grid-row: 4/5;
     text-align: center;
@@ -169,7 +181,7 @@ nav a:hover {
     margin: 50px 0 0 0;
     border-radius: 90px;
     transition: transform .5s;
-	box-shadow: 5px 5px 10px #292724;
+    box-shadow: 5px 5px 10px #292724;
 
 }
 
@@ -236,8 +248,9 @@ nav a:hover {
     height: 100%;
     object-fit: contain;
     border-radius: 20px;
-    
+
 }
+
 .intro2 img:hover {
     opacity: .6;
     transform: scale(1.1);
@@ -299,15 +312,15 @@ nav a:hover {
 }
 
 .overlay1 {
-    position:absolute;
-    bottom:0;
-    right:0;
-    left:100%;
-    height:100%;
-    width:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    height: 100%;
+    width: 0;
     background-color: #f34646;
     overflow: hidden;
-    transition:0.5s;
+    transition: 0.5s;
     border-radius: 20px;
 }
 
@@ -315,15 +328,15 @@ nav a:hover {
     width: 100%;
     left: 0;
     opacity: 1;
-  }
+}
 
 .front-p {
     color: white;
-    font-size: 22px;  
-    text-align: center; 
-    position:absolute;
-    top:50%;
-    left:50%;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
 }
@@ -342,7 +355,7 @@ nav a:hover {
 }
 
 .container1:hover .front-img {
-    opacity:0.2;
+    opacity: 0.2;
 }
 
 
@@ -376,11 +389,11 @@ nav a:hover {
 
 .cms-p {
     color: white;
-    font-size: 22px;  
-    text-align: center; 
-    position:absolute;
-    top:50%;
-    left:50%;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -392,7 +405,7 @@ nav a:hover {
 }
 
 .container2:hover .cms-img {
-    opacity:0.2;
+    opacity: 0.2;
 }
 
 .cms-h {
@@ -426,15 +439,15 @@ nav a:hover {
     width: 100%;
     left: 0;
     opacity: 1;
-  }
+}
 
 .ecommerce-p {
     color: white;
-    font-size: 22px;  
-    text-align: center; 
-    position:absolute;
-    top:50%;
-    left:50%;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
 }
@@ -447,7 +460,7 @@ nav a:hover {
 }
 
 .container3:hover .ecommerce-img {
-    opacity:0.2;
+    opacity: 0.2;
 }
 
 .ecommerce-h {
@@ -467,7 +480,7 @@ nav a:hover {
     grid-row: 1/1;
     font-size: 30px;
     color: #086840;
-    
+
 
 }
 
@@ -476,7 +489,7 @@ nav a:hover {
     grid-row: 2/2;
     color: #d84848;
     text-align: center;
-    
+
 }
 
 .intro4 img {
@@ -503,10 +516,12 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 footer a {
     color: #332504;
     text-decoration: none;
 }
+
 footer a:hover {
     color: #087e4c;
 }
@@ -594,7 +609,8 @@ footer img {
 }
 
 /* Hide the images by default */
-.mySlides3, .mySlides4 {
+.mySlides3,
+.mySlides4 {
     display: none;
 }
 
@@ -602,7 +618,7 @@ footer img {
 .slide-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 figure {
@@ -610,11 +626,12 @@ figure {
     grid-row: 1/6;
     z-index: -1;
     display: flex;
-        flex-flow: column;
-        width: 100%;
-        margin: 0;
+    flex-flow: column;
+    width: 100%;
+    margin: 0;
 
 }
+
 /* Caption text */
 .text {
     color: #fa0303;
@@ -635,7 +652,8 @@ figure {
 }
 
 /* The dots/bullets/indicators */
-.dot3, .dot4 {
+.dot3,
+.dot4 {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -722,14 +740,14 @@ figure {
     position: relative;
     background-color: #11e78f;
 }
-  
-  .slides-container {
+
+.slides-container {
     display: flex;
     transition: transform 3s ease-in-out;
     text-align: center;
 }
 
-  .slide {
+.slide {
     flex: 0 0 100%;
 }
 
@@ -783,18 +801,21 @@ figure {
     margin: 0 auto;
 }
 
-.ceo img {vertical-align: middle;
+.ceo img {
+    vertical-align: middle;
     width: 100%;
 }
 
 .ceo .wording {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 
 .md {
@@ -805,18 +826,21 @@ figure {
     margin: 0 auto;
 }
 
-.md img {vertical-align: middle;
+.md img {
+    vertical-align: middle;
     width: 100%;
 }
 
 .md .wording {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 
 .gm {
@@ -827,19 +851,23 @@ figure {
     margin: 0 auto;
 }
 
-.gm img {vertical-align: middle;
+.gm img {
+    vertical-align: middle;
     width: 100%;
 }
 
 .gm .wording {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
+
 /*******************************************************
 *
 *          CSS for Get in touch page
@@ -863,8 +891,3 @@ figure {
     grid-row: 2/4;
     z-index: 1;
 }
-
-
-  
-  
-  
