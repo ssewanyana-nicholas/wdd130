@@ -6,6 +6,8 @@ START grid layout extra credit
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgb(170, 169, 169);
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .grid1 h1 {
