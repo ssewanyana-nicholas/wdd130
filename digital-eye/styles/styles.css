@@ -1060,3 +1060,155 @@ textarea {
     width: 100%;
     padding: 20px;
 }
+
+
+/*******************************************************
+*
+*              small screen default
+*
+********************************************************/
+@media screen and (max-width: 900px) {
+
+    .welcome-img,
+    .welcome-grid,
+    .button {
+        display: block;
+        height: auto;
+    }
+
+    header,
+    footer {
+        display: inline;
+    }
+
+    .button {
+        display: block;
+        height: auto;
+        font-size: small;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+        font-size: 16px;
+
+    }
+
+    .welcome-img {
+        margin-top: 0;
+    }
+
+    .welcome-title h1 {
+        display: none;
+    }
+
+    .intro2,
+    .intro1,
+    .intro3,
+    .intro4 {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .intro2 p,
+    .intro1 p,
+    .intro3 p,
+    .intro4 p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .intro2 h4,
+    .intro1 h4,
+    .intro3 h4,
+    .intro4 h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .cms-p,
+    .ecommerce-p,
+    .front-p {
+        font-size: 9px;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .group {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 10px;
+
+    }
+
+
+    footer {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        display: block;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        font-size: 16px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .first-text h1 {
+        font-size: 16px;
+    }
+
+    .team h4 {
+        font-size: 18px;
+    }
+
+    .team p {
+        font-size: 16px;
+    }
+
+    .big-people {
+        display: block;
+    }
+
+
+    .team img {
+        display: none;
+        
+    }
+
+    .info {
+        display: block;
+    }
+
+    .wording p {
+        font-size: 10px;
+    }
+
+    ul {
+        width: 50%;
+    }
+
+
+}
